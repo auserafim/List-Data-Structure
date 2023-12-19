@@ -28,6 +28,8 @@ int busca_valor_lista(tipo_lista *lst, int);
 int busca_menor_lista(tipo_lista lst);
 int busca_maior_lista(tipo_lista lst);
 int busca_posicao_valor(tipo_lista lst, int);
+int atualiza_valor(tipo_lista *lst, int, int);
+
 
 
 #endif // Fim da __LISTA_H_

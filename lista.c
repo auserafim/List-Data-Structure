@@ -226,3 +226,16 @@ int remove_valor_lista(tipo_lista *lst, int aux) {
     return -1;
   }
   }
+
+
+int atualiza_valor(tipo_lista *lst, int valor, int novo_valor) {
+  int i;
+  int vezes = 0; 
+  for(i = 0; i < lst->qtd; i++) {
+    if(lst->lista[i] == valor) {
+      lst->lista[i] = novo_valor;
+      vezes++;
+    }
+  }
+  return vezes; 
+}
